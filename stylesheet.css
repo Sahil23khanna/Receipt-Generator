@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+.btn-width{
+   flex: 0 0 20%;
+   margin: 1vw;
+}
+
+.btnStyle{
+    background-color: teal;
+    padding: 1px 4px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btnStyle:hover{
+    background-color: #333333;
+    color: beige;
+}
+
+.input {
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 3px;
+}
+
+.selected {
+  width: 150px;
+  /* border: 1px solid #ccc; */
+  border: 1px solid black;
+  padding-left: 3px;
+  border-radius: 4px;
+}
+
+#productName{
+  border: 1px solid black;
+  padding-left: 3px;
+}
+
+.main1{
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.main2{
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.main3{
+  border-bottom: 3px solid black;
+}
+
+/* === Receipt column scroll fix === */
+.main3 {
+  max-height: 100vh;       /* Prevents the receipt from going beyond screen height */
+  overflow-y: auto;        /* Enables vertical scrolling only if needed */
+  overflow-x: hidden;      /* Removes horizontal scrollbar */
+  padding-bottom: 1rem;
+}
+
+/* === Table formatting to prevent horizontal overflow === */
+.table {
+  width: 100%;
+  table-layout: fixed;     /* Forces equal column width and prevents stretching */
+}
+
+.table th,
+.table td {
+  white-space: nowrap;         /* Keeps text on one line */
+  overflow: hidden;            /* Hides text that overflows */
+  text-overflow: ellipsis;     /* Adds "..." for long text */
+  max-width: 120px;            /* Optional: adjust based on your design */
+}
+
+/* Optional: On mobile, give it a bit less height */
+@media (max-width: 768px) {
+  .main3 {
+    max-height: 60vh;
+  }
+}
