@@ -4,6 +4,10 @@
     color: #333333;
 }
 
+.container-fluid{
+  min-height: 100vh;
+}
+
 .btn-width{
    flex: 0 0 20%;
    margin: 1vw;
@@ -43,16 +47,12 @@
 
 .main1{
   border-right: 3px solid black;
-  border-bottom: 3px solid black;
+ /*  border-bottom: 3px solid black; */
 }
 
 .main2{
   border-right: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-.main3{
-  border-bottom: 3px solid black;
+  
 }
 
 /* === Receipt column scroll fix === */
@@ -62,6 +62,14 @@
   overflow-x: hidden;      /* Removes horizontal scrollbar */
   padding-bottom: 1rem;
 }
+
+.full-height {
+  min-height: 100vh; /* make all columns same height as screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 /* === Table formatting to prevent horizontal overflow === */
 .table {
