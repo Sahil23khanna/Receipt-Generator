@@ -1,6 +1,6 @@
-Receipt Calculator
+Receipt Generator
 
-Receipt Calculator is a simple web application that helps users calculate
+Receipt Generator is a simple web application that helps users calculate
 the total bill amount based on item prices, quantities, and applicable charges.
 
 The project allows users to enter multiple items and automatically calculates
